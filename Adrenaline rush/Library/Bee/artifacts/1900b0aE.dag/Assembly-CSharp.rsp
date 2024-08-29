@@ -386,6 +386,8 @@
 "Assets/Scripts/Chest.cs"
 "Assets/Scripts/EnemyPatrol.cs"
 "Assets/Scripts/Inventory/Inventory.cs"
+"Assets/Scripts/Inventory/InventoryItem.cs"
+"Assets/Scripts/Inventory/InventoryItemData.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/PlayerHit.cs"
 "Assets/Scripts/PlayerMovement.cs"

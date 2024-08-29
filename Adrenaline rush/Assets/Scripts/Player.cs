@@ -11,12 +11,16 @@ public class Player : MonoBehaviour
 
     // attach weapon scripts to all weapons, all inherit from a main weapon script
 
+    /*
     private int strength = 1;
     private int hp = 10;
     private float jumpHeight = 1;
     private int bonusJump = 0;
     private float movementSpeed = 1;
     private int stamina = 1;
+    */
+
+
     private int layerMask = 1 << 8;
     [SerializeField] InputAction openChest;
     void Start()
@@ -30,18 +34,17 @@ public class Player : MonoBehaviour
     void Update()
     {
         if (openChest.ReadValue<float>() > 0)
-        { //&& findChest()) {
-            Debug.Log("e pressed");
-
+        { 
             findChest();
         }
     }
     void findChest()
     {
-        //   RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), 6f, layerMask))
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 6f, layerMask))
         {
-            Debug.Log("found chest");
+            Chest chest = hit.collider.gameObject.GetComponent<Chest>();
+            chest.Open();
         }
         //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
     }
