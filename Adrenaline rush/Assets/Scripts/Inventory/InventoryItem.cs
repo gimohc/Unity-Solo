@@ -16,6 +16,8 @@ public class InventoryItem : MonoBehaviour
         stackSize++;
 
     }
+    // find proximity of player next to item to pick it up.
+    
     public void RemoveFromStack() {
         stackSize--;
     }
