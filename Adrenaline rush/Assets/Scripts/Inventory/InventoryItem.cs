@@ -6,21 +6,47 @@ using UnityEngine;
 [Serializable]
 public class InventoryItem : MonoBehaviour
 {
-    public InventoryItemData data {get; private set; }
+
+    // have serialized field drops as Inventory item for mining through constructor we initialize that   
+    [SerializeField] public InventoryItemData data;
     public int stackSize { get; private set; }
-    public InventoryItem(InventoryItemData source) {
+    List<GameObject> players;
+    public InventoryItem(InventoryItemData source, int amount)
+    {
         data = source;
-        AddToStack();
+        stackSize = amount;
     }
-    public void AddToStack() {
-        stackSize++;
+    void OnTriggerEnter(Collider other)
+    {
+        foreach (GameObject player in players)
+        {
+            if (other.gameObject == player)
+            {
+                Debug.Log("Picked up item");
+                AddItemToPlayer(player);
+            }
+
+        }
 
     }
-    // find proximity of player next to item to pick it up.
-    
-    public void RemoveFromStack() {
-        stackSize--;
+    void AddItemToPlayer(GameObject player)
+    {
+        Inventory inventory = player.GetComponent<Inventory>();
+        inventory.AddItem(this);
+
+        Destroy(gameObject);
+
     }
-    
+    private void Start()
+    {
+        // down side cant join mid game if done multiplayer.
+        players = new List<GameObject>();
+        GameObject playersContainer = FindObjectOfType<Players>().gameObject;
+        foreach (Transform player in playersContainer.transform)
+        {
+            players.Add(player.gameObject);
+        }
+    }
+
 }
 

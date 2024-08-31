@@ -5,31 +5,43 @@ using UnityEngine.InputSystem;
 
 public class Inventory : MonoBehaviour
 {
-
-    // store all items in list/arraylist 
-    // for each item show it 
+ 
     [SerializeField] InputAction toggleInventory;
     bool inventoryIsOpen = false;
-    List<InventoryItem> inventory = new List<InventoryItem>();
+    Dictionary<InventoryItem, int> inventory = new Dictionary<InventoryItem, int>();
 
-    void ToggleInventory() {
-        if(toggleInventory.ReadValue<float>() > 0) {
-            if(!inventoryIsOpen)
-                foreach  (InventoryItem item in inventory) {
-                    // todo show inventory 
+    void ToggleInventory()
+    {
+        if (toggleInventory.ReadValue<float>() > 0)
+        {
+            if (!inventoryIsOpen) {
+                inventoryIsOpen = true;
+                foreach (InventoryItem item in inventory.Keys)
+                {
+                    // todo show inventory
+                    Debug.Log(item.data.displayName + " x" + item.stackSize);
                 }
-            else {
+
+            }
+            else
+            {
+                inventoryIsOpen = false;
                 //todo hide inventory
             }
             inventoryIsOpen = !inventoryIsOpen;
         }
     }
-    public void AddItem(InventoryItem item) {
-        inventory.Add(item);
+    public void AddItem(InventoryItem item)
+    {
+        int amount = item.stackSize;
+        if (inventory.ContainsKey(item))
+            inventory[item] += amount;
+        else
+            inventory.Add(item, amount);
 
     }
 
-    
+
     // Start is called before the first frame update
     void Start()
     {

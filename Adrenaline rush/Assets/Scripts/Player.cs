@@ -26,11 +26,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         openChest.Enable();
-        //layerMask = ~layerMask;
-
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (openChest.ReadValue<float>() > 0)
@@ -41,11 +37,10 @@ public class Player : MonoBehaviour
     void findChest()
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 6f, layerMask))
+        if (Physics.Raycast(transform.position, Vector3.forward, out hit, 6f, layerMask))
         {
             Chest chest = hit.collider.gameObject.GetComponent<Chest>();
             chest.Open();
         }
-        //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
     }
 }
