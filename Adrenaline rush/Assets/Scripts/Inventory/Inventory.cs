@@ -5,21 +5,22 @@ using UnityEngine.InputSystem;
 
 public class Inventory : MonoBehaviour
 {
- 
+
     [SerializeField] InputAction toggleInventory;
     bool inventoryIsOpen = false;
-    Dictionary<InventoryItem, int> inventory = new Dictionary<InventoryItem, int>();
+    Dictionary<InventoryItemData, int> inventory = new Dictionary<InventoryItemData, int>();
 
     void ToggleInventory()
     {
         if (toggleInventory.ReadValue<float>() > 0)
         {
-            if (!inventoryIsOpen) {
+            if (!inventoryIsOpen)
+            {
                 inventoryIsOpen = true;
-                foreach (InventoryItem item in inventory.Keys)
+                foreach (InventoryItemData item in inventory.Keys)
                 {
                     // todo show inventory
-                    Debug.Log(item.data.displayName + " x" + item.stackSize);
+                    Debug.Log(item.displayName + " x" + inventory[item]);
                 }
 
             }
@@ -34,12 +35,16 @@ public class Inventory : MonoBehaviour
     public void AddItem(InventoryItem item)
     {
         int amount = item.stackSize;
-        if (inventory.ContainsKey(item))
-            inventory[item] += amount;
+        InventoryItemData data = item.data;
+        if (inventory.ContainsKey(data))
+        {
+            inventory[data] += amount;
+        }
         else
-            inventory.Add(item, amount);
+            inventory.Add(data, amount);
 
     }
+
 
 
     // Start is called before the first frame update

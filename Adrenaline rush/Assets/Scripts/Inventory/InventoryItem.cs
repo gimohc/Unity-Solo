@@ -9,8 +9,12 @@ public class InventoryItem : MonoBehaviour
 
     // have serialized field drops as Inventory item for mining through constructor we initialize that   
     [SerializeField] public InventoryItemData data;
-    public int stackSize { get; private set; }
+    [SerializeField] public int stackSize; //{ get; private set; } = 1;
     List<GameObject> players;
+    private void Awake() { // limited amount of time to pick it up 
+        StartCoroutine(DestroyObject());
+        
+    }
     public InventoryItem(InventoryItemData source, int amount)
     {
         data = source;
@@ -29,11 +33,14 @@ public class InventoryItem : MonoBehaviour
         }
 
     }
+    public void SetStackSize(int stackSize)
+    {
+        this.stackSize = stackSize;
+    }
     void AddItemToPlayer(GameObject player)
     {
         Inventory inventory = player.GetComponent<Inventory>();
         inventory.AddItem(this);
-
         Destroy(gameObject);
 
     }
@@ -47,6 +54,10 @@ public class InventoryItem : MonoBehaviour
             players.Add(player.gameObject);
         }
     }
+    private IEnumerator DestroyObject() {
+        yield return new WaitForSeconds(90f); 
+        Destroy(gameObject);
+    } 
 
 }
 

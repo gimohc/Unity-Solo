@@ -17,10 +17,13 @@ public class Player : MonoBehaviour
     private float jumpHeight = 1;
     private int bonusJump = 0;
     private float movementSpeed = 1;
-    private int stamina = 1;
     */
+    private int stamina = 100;
+    
 
-
+    public int GetStamina() {
+        return this.stamina;
+    }
     private int layerMask = 1 << 8;
     [SerializeField] InputAction openChest;
     void Start()

@@ -383,8 +383,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.36f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.36f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Pouch.cs"
 "Assets/Scripts/Chest.cs"
-"Assets/Scripts/EnemyPatrol.cs"
 "Assets/Scripts/Inventory/Inventory.cs"
 "Assets/Scripts/Inventory/InventoryItem.cs"
 "Assets/Scripts/Inventory/InventoryItemData.cs"
@@ -393,6 +393,7 @@
 "Assets/Scripts/PlayerHit.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/Players.cs"
+"Assets/Scripts/Weapons/EnemyPatrol.cs"
 "Assets/Scripts/Weapons/Weapons.cs"
 -langversion:9.0
 /deterministic
