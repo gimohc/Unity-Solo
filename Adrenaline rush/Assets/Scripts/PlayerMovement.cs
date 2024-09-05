@@ -8,6 +8,7 @@ using Unity.VisualScripting;
 
 [RequireComponent(typeof(Player))]
 [RequireComponent(typeof(PlayerHit))]
+[RequireComponent(typeof(Inventory))]
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -19,16 +20,22 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float defaultMovementFactor = 20f;
     [SerializeField] float mouseSensitivityFactor = 200f;
     [SerializeField] float jumpingFactor = 1f;
-    [SerializeField] bool isJumping = false;
-    [SerializeField] float currentStamina;
+    [SerializeField] bool isGrounded = false;
+    float currentStamina; 
+    bool isRegenerating = false;
+    bool isSprinting = false;
+
     private Rigidbody rigidbody;
     private Player stats;
     private int maxStamina;
     private float movementFactor;
-    [SerializeField] bool isRegenerating = false;
+    Collider collider; // change when you change models
+
 
     void Awake()
     {
+        collider = GetComponent<SphereCollider>();
+
         rigidbody = GetComponent<Rigidbody>();
         stats = GetComponent<Player>();
 
@@ -78,53 +85,60 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Jump()
     {
-        float jumpInput = jump.ReadValue<float>();// * Time.deltaTime * jumpingFactor;
-        if (jumpInput > 0 && !isJumping)
+        float jumpInput = jump.ReadValue<float>();
+        isGrounded = Physics.Raycast(transform.position, -Vector3.up, collider.bounds.extents.y + 0.1f);
+        if (jumpInput > 0 && isGrounded)
         {
-            isJumping = true;
-            rigidbody.AddForce(Vector3.up * jumpingFactor);
-
+            rigidbody.AddForce(Vector3.up * jumpingFactor, ForceMode.Impulse);
+            
         }
+        if(rigidbody.velocity.y < float.Epsilon && !isGrounded) 
+            rigidbody.AddForce(Physics.gravity * 2.5f, ForceMode.Acceleration);
 
 
     }
     public void Sprint()
     {
-        
-        if (sprint.ReadValue<float>() > 0 && currentStamina > 0)
+
+        if (sprint.ReadValue<float>() > 0 && !isSprinting)
         {
-            StopCoroutine(StartStaminaRegen());
-            isRegenerating = false;
-            Debug.Log(Time.deltaTime);
-            currentStamina = Mathf.Clamp(currentStamina - Time.deltaTime * 100, 0, maxStamina);
-            
-            movementFactor = defaultMovementFactor * 2;
+            StartCoroutine(DecreaseStamina());
+            movementFactor = 2 * defaultMovementFactor;
 
         }
-        else
+        else if (sprint.ReadValue<float>() <= 0)
         {
             if (currentStamina < 100 && !isRegenerating)
+            {
                 StartCoroutine(StartStaminaRegen());
+            }
             movementFactor = defaultMovementFactor;
+        }
+        
+    }
+    private IEnumerator DecreaseStamina()
+    {
+        isRegenerating = false;
+        isSprinting = true;
+        
+        while (currentStamina > 0 && isSprinting)
+        {
+            currentStamina = Mathf.Clamp(currentStamina -2, 0, maxStamina);
+            yield return new WaitForSeconds(0.2f);
         }
     }
 
     private IEnumerator StartStaminaRegen()
     {
+        isSprinting = false;
         isRegenerating = true;
         yield return new WaitForSeconds(0.7f);
-        
-        while(currentStamina < 100) {
-            currentStamina = Mathf.Clamp(currentStamina + Time.deltaTime * 200, 0, maxStamina);
-            yield return new WaitForSeconds(0.01f);
+
+        while (currentStamina < 100 && isRegenerating)
+        {
+            currentStamina = Mathf.Clamp(currentStamina + 3, 0, maxStamina);
+            yield return new WaitForSeconds(0.2f);
         }
-    }
-
-    void OnCollisionEnter(Collision other)
-    {
-        //if (other.gameObject.GetComponent<Floor>() != null) 
-        isJumping = false;
-
     }
 
 

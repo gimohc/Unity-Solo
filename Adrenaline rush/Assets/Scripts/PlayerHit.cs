@@ -3,16 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(Player))]
+[RequireComponent(typeof(PlayerMovement))]
+[RequireComponent(typeof(Inventory))]
 public class PlayerHit : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] InputAction swing;
-    [SerializeField] float range = 80f;
     bool isSwinging = false;
-    int damage = 20; // placeholder change it according to the weapon held
+    public static int defaultDamage = 10;
+    public static float defaultRange = 40f;
+    Inventory inventory;
 
     void Start()
     {
+        inventory = GetComponent<Inventory>();
         swing.Enable();
     }
 
@@ -27,7 +32,15 @@ public class PlayerHit : MonoBehaviour
     {
         isSwinging = true;
         RaycastHit rayHit;
-        if(Physics.Raycast(transform.position, Vector3.forward, out rayHit, range)) 
+        int damage = defaultDamage;
+        float range = defaultRange;
+        InventoryItem itemInHand = inventory.GetItemInHand();
+        if (itemInHand != null)
+        {
+            range = itemInHand.data.range;
+            damage = itemInHand.data.damage;
+        }
+        if (Physics.Raycast(transform.position, Vector3.forward, out rayHit, range))
         {
             GameObject objectHit = rayHit.collider.gameObject;
             if (objectHit != null)

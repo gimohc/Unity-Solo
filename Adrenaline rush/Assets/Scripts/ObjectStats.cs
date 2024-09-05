@@ -27,7 +27,7 @@ public class ObjectStats : MonoBehaviour
             // for now its gonna be spawning in the exact same spot it was destroyed
             drops.data = inventoryItemData;
             drops.SetStackSize(Random.Range(1, 4));
-            Instantiate(pouch, transform.position, Quaternion.identity, pouches.gameObject.transform);
+            Instantiate(pouch, transform.position + Vector3.up * 5, Quaternion.identity, pouches.gameObject.transform);
             Destroy(gameObject);
         }
 

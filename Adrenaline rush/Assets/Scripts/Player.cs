@@ -5,6 +5,9 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(PlayerHit))]
+[RequireComponent(typeof(Inventory))]
+[RequireComponent(typeof(PlayerMovement))]
 public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
