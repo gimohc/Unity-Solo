@@ -15,7 +15,7 @@ C:/Unity solo/Adrenaline rush
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-52797
+50352
 Successfully changed project path to: C:/Unity solo/Adrenaline rush
 C:/Unity solo/Adrenaline rush
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Unity solo/Adrenaline rush
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [146600] Host "[IP] 192.168.0.150 [Port] 0 [Flags] 2 [Guid] 2783242518 [EditorId] 2783242518 [Version] 1048832 [Id] WindowsEditor(7,momo) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [147156] Host "[IP] 192.168.0.150 [Port] 0 [Flags] 2 [Guid] 2699392564 [EditorId] 2699392564 [Version] 1048832 [Id] WindowsEditor(7,momo) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [146600] Host "[IP] 192.168.0.150 [Port] 0 [Flags] 2 [Guid] 2783242518 [EditorId] 2783242518 [Version] 1048832 [Id] WindowsEditor(7,momo) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [147156] Host "[IP] 192.168.0.150 [Port] 0 [Flags] 2 [Guid] 2699392564 [EditorId] 2699392564 [Version] 1048832 [Id] WindowsEditor(7,momo) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-Refreshing native plugins compatible for Editor in 19.32 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 15.79 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.36f1 (95a4219250e5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.36f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.36f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.36f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.36f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56152
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56136
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.36f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.36f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.36f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.018539 seconds.
-- Loaded All Assemblies, in  0.297 seconds
+Registered in 0.020876 seconds.
+- Loaded All Assemblies, in  0.305 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 248 ms
+Android Extension - Scanning For ADB Devices 239 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.442 seconds
-Domain Reload Profiling: 735ms
+- Finished resetting the current domain, in  0.452 seconds
+Domain Reload Profiling: 752ms
 	BeginReloadAssembly (108ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (62ms)
-	LoadAllAssembliesAndSetupDomain (93ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (102ms)
 		LoadAssemblies (103ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (91ms)
-			TypeCache.Refresh (90ms)
-				TypeCache.ScanAssembly (82ms)
+		AnalyzeDomain (100ms)
+			TypeCache.Refresh (99ms)
+				TypeCache.ScanAssembly (89ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (442ms)
+	FinalizeReload (453ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (410ms)
+		SetupLoadedEditorAssemblies (411ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (318ms)
+			InitializePlatformSupportModulesInManaged (320ms)
 			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
@@ -120,8 +120,8 @@ Domain Reload Profiling: 735ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.701 seconds
-Refreshing native plugins compatible for Editor in 9.19 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.837 seconds
+Refreshing native plugins compatible for Editor in 7.19 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
@@ -130,47 +130,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.617 seconds
-Domain Reload Profiling: 1306ms
-	BeginReloadAssembly (143ms)
+- Finished resetting the current domain, in  0.650 seconds
+Domain Reload Profiling: 1479ms
+	BeginReloadAssembly (144ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
+		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (18ms)
+		CreateAndSetChildDomain (16ms)
 	RebuildCommonClasses (20ms)
 	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (480ms)
-		LoadAssemblies (384ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (613ms)
+		LoadAssemblies (463ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (190ms)
-			TypeCache.Refresh (161ms)
-				TypeCache.ScanAssembly (148ms)
-			ScanForSourceGeneratedMonoScriptInfo (18ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (618ms)
+		AnalyzeDomain (247ms)
+			TypeCache.Refresh (214ms)
+				TypeCache.ScanAssembly (197ms)
+			ScanForSourceGeneratedMonoScriptInfo (25ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (650ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (501ms)
+		SetupLoadedEditorAssemblies (522ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (25ms)
+			InitializePlatformSupportModulesInManaged (24ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (85ms)
-			ProcessInitializeOnLoadAttributes (356ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
-			AfterProcessingInitializeOnLoad (13ms)
+			BeforeProcessingInitializeOnLoad (88ms)
+			ProcessInitializeOnLoadAttributes (363ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (18ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (4ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 7.44 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 6.98 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7028 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 223 unused Assets / (13.3 MB). Loaded Objects now: 7383.
-Memory consumption went from 314.1 MB to 300.8 MB.
-Total: 5.155000 ms (FindLiveObjects: 0.409100 ms CreateObjectMapping: 0.231900 ms MarkObjects: 2.629800 ms  DeleteObjects: 1.883500 ms)
+Memory consumption went from 314.0 MB to 300.7 MB.
+Total: 5.083800 ms (FindLiveObjects: 0.410400 ms CreateObjectMapping: 0.289800 ms MarkObjects: 2.411600 ms  DeleteObjects: 1.971200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -188,122 +188,163 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 354447.120829 seconds.
-  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Stone_Crystal_02_Gold.prefab
-  artifactKey: Guid(a2b21baf50fb023478ee35b93c0c27a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Stone_Crystal_02_Gold.prefab using Guid(a2b21baf50fb023478ee35b93c0c27a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'c008f78dcffaa249e42c6b24dd38e4a9') in 0.047340 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 117.335543 seconds.
-  path: Assets/Prefabs/pouch.prefab
-  artifactKey: Guid(84fcb74f55fb0cb4692de65e1e12e2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/pouch.prefab using Guid(84fcb74f55fb0cb4692de65e1e12e2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '6064bdc50f8317286f31e366ca215cb2') in 0.012219 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 28.310192 seconds.
-  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Stone_Crystal_02_Gold.prefab
-  artifactKey: Guid(a2b21baf50fb023478ee35b93c0c27a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Stone_Crystal_02_Gold.prefab using Guid(a2b21baf50fb023478ee35b93c0c27a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '9cc5b2e8a5c5be261c331e33050c423d') in 0.011456 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 3.183262 seconds.
-  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Stone_Crystal_02_Gold.prefab
-  artifactKey: Guid(a2b21baf50fb023478ee35b93c0c27a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Stone_Crystal_02_Gold.prefab using Guid(a2b21baf50fb023478ee35b93c0c27a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '28d7009d3d6b2905217989575e7a622f') in 0.006153 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 7.839789 seconds.
-  path: Assets/PurePoly/Mining_Free_Assets/Materials/PP_Ground.mat
-  artifactKey: Guid(552c07fcf7c5d3245b3d64c6be39a7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PurePoly/Mining_Free_Assets/Materials/PP_Ground.mat using Guid(552c07fcf7c5d3245b3d64c6be39a7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '43e4070160552df2b83a0ee083c63d9e') in 0.045974 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 14.978924 seconds.
-  path: Assets/PurePoly/Mining_Free_Assets/Textures/PP_Color_Palette.png
-  artifactKey: Guid(968210b4d9cff2c4eb2cb128498dd201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PurePoly/Mining_Free_Assets/Textures/PP_Color_Palette.png using Guid(968210b4d9cff2c4eb2cb128498dd201) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '77dd0a8533ccca033e4cb00a82e687d2') in 0.025053 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 16.754442 seconds.
-  path: Assets/PurePoly/Mining_Free_Assets/Textures
-  artifactKey: Guid(843fd50453f276b46a68c132cf930527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PurePoly/Mining_Free_Assets/Textures using Guid(843fd50453f276b46a68c132cf930527) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'f749bd22c78e2bae60a02de745d41642') in 0.000458 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 29.758894 seconds.
-  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Stone_Crystal_02_Gold.prefab
-  artifactKey: Guid(a2b21baf50fb023478ee35b93c0c27a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Stone_Crystal_02_Gold.prefab using Guid(a2b21baf50fb023478ee35b93c0c27a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '3b639baf5a013d3452798f6024da15f0') in 0.010246 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 24
-========================================================================
-Received Import Request.
-  Time since last request: 3.592554 seconds.
-  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Stone_Crystal_02_Gold.prefab
-  artifactKey: Guid(a2b21baf50fb023478ee35b93c0c27a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Stone_Crystal_02_Gold.prefab using Guid(a2b21baf50fb023478ee35b93c0c27a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '1f341c9399de3ab106b603ff59ccc59c') in 0.009768 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 24
-========================================================================
-Received Import Request.
-  Time since last request: 4.815732 seconds.
-  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Stone_Crystal_02_Gold.prefab
-  artifactKey: Guid(a2b21baf50fb023478ee35b93c0c27a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Stone_Crystal_02_Gold.prefab using Guid(a2b21baf50fb023478ee35b93c0c27a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '731d1db817fa2663039dcbc601ac36a9') in 0.010663 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 24
-========================================================================
-Received Import Request.
-  Time since last request: 109.253684 seconds.
-  path: Assets/Low_Poly_ResourceRocks
-  artifactKey: Guid(beaa60ba2efb0dd45830e94eac635aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low_Poly_ResourceRocks using Guid(beaa60ba2efb0dd45830e94eac635aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'e17dcf95ec9bda36a4809b4a3f83f1ac') in 0.000518 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.352234 seconds.
+  Time since last request: 355254.957163 seconds.
   path: Assets/Low_Poly_ResourceRocks/CutGemsVar1.prefab
   artifactKey: Guid(2fbe16c206e141245b0c4b20de5e2a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Low_Poly_ResourceRocks/CutGemsVar1.prefab using Guid(2fbe16c206e141245b0c4b20de5e2a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'e9e2b1486cf0898556a323d575417c7e') in 0.011534 seconds
+ -> (artifact id: '0fb7d22bbea3604715707c39a40d6cba') in 0.049130 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 5.039974 seconds.
+  path: Assets/Low_Poly_ResourceRocks/Models
+  artifactKey: Guid(a69f41d85542e6a4e8908f5a07b7f83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/Models using Guid(a69f41d85542e6a4e8908f5a07b7f83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '33e96284f83bcc334b7b6c3ca30de5a0') in 0.000541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.910600 seconds.
+  path: Assets/Low_Poly_ResourceRocks/CutGemsVar1.prefab
+  artifactKey: Guid(2fbe16c206e141245b0c4b20de5e2a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/CutGemsVar1.prefab using Guid(2fbe16c206e141245b0c4b20de5e2a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'c8c07971fc1d7682cf8152029571bfc4') in 0.005721 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 41.894728 seconds.
+  path: Assets/Low_Poly_ResourceRocks/Materials/Gold Variant.mat
+  artifactKey: Guid(583c0971ec6a0c540818c9604a6fa088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/Materials/Gold Variant.mat using Guid(583c0971ec6a0c540818c9604a6fa088) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'a64d79bea5cae6ff37b7fce07f8c7ba1') in 0.019006 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 89.813014 seconds.
+  path: Assets/Low_Poly_ResourceRocks/Materials/Gold Variant 1.mat
+  artifactKey: Guid(261db3378d848bb4e98a0f5968348572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/Materials/Gold Variant 1.mat using Guid(261db3378d848bb4e98a0f5968348572) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'd61ee7bc410d32e3c9eba2c397b23101') in 0.015844 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 29.193840 seconds.
+  path: Assets/Low_Poly_ResourceRocks/CutGemsVar2.prefab
+  artifactKey: Guid(dd35a2baa2cfd2c4d8efd51a61061e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/CutGemsVar2.prefab using Guid(dd35a2baa2cfd2c4d8efd51a61061e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '7ad91c24ad8f0206b59d3fcdcfb29acb') in 0.006633 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 11.259923 seconds.
+  path: Assets/Low_Poly_ResourceRocks/ruby.prefab
+  artifactKey: Guid(dd35a2baa2cfd2c4d8efd51a61061e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/ruby.prefab using Guid(dd35a2baa2cfd2c4d8efd51a61061e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '9c3c9d39d1ab552f2d85e5dc07655948') in 0.010275 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 13.401433 seconds.
+  path: Assets/Low_Poly_ResourceRocks/Materials/Gold Variant 2.mat
+  artifactKey: Guid(186fd63764d42cd4e9734f867eae7eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/Materials/Gold Variant 2.mat using Guid(186fd63764d42cd4e9734f867eae7eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'fa51a0a4e875db26dc0dac4f276fc8e5') in 0.068499 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 46.701459 seconds.
+  path: Assets/Low_Poly_ResourceRocks/PointyGemsVar1.prefab
+  artifactKey: Guid(4bcd7948fdd17e74ebf1a06f654e4535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/PointyGemsVar1.prefab using Guid(4bcd7948fdd17e74ebf1a06f654e4535) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '73ee9c066ad9ecb4e5f8928788c28da6') in 0.008599 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 77.592646 seconds.
+  path: Assets/Low_Poly_ResourceRocks/lopaz.prefab
+  artifactKey: Guid(36b93b46c5c5d60458c18190ea1116c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/lopaz.prefab using Guid(36b93b46c5c5d60458c18190ea1116c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '168b9d37dca445f088c975d9d6c5fa4f') in 0.020296 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 76.514589 seconds.
+  path: Assets/Low_Poly_ResourceRocks/Materials/emerald.mat
+  artifactKey: Guid(14ec80b1ba021604ba3e603dd425c8ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/Materials/emerald.mat using Guid(14ec80b1ba021604ba3e603dd425c8ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '0fc9907d30ae0e5f9e6caa6042516fe8') in 0.008863 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 30.688029 seconds.
+  path: Assets/Low_Poly_ResourceRocks/emerald.prefab
+  artifactKey: Guid(2fbe16c206e141245b0c4b20de5e2a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/emerald.prefab using Guid(2fbe16c206e141245b0c4b20de5e2a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'c78eeddbd7e61aea2bbc9170b2f23371') in 0.015592 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 59.869721 seconds.
+  path: Assets/Low_Poly_ResourceRocks/Materials/lopaz.mat
+  artifactKey: Guid(77b73c8e45d8011428509dd345bd5f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/Materials/lopaz.mat using Guid(77b73c8e45d8011428509dd345bd5f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'b58cf35aa1728b88b55d90ae3fe4d613') in 0.011629 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 10.960283 seconds.
+  path: Assets/Low_Poly_ResourceRocks/Materials/ruby.mat
+  artifactKey: Guid(261db3378d848bb4e98a0f5968348572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/Materials/ruby.mat using Guid(261db3378d848bb4e98a0f5968348572) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '9fae8eb753cfb03de2e6d67b27aca5a7') in 0.021146 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 28.051921 seconds.
+  path: Assets/Low_Poly_ResourceRocks/Materials/orange.mat
+  artifactKey: Guid(c68379ba9afdd7247a88b73e828fbae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/Materials/orange.mat using Guid(c68379ba9afdd7247a88b73e828fbae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8f6e943f175c47811f06fab53ad53156') in 0.008162 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 21.910486 seconds.
+  path: Assets/Low_Poly_ResourceRocks/gold.prefab
+  artifactKey: Guid(e1f35f4b9ee7e9747b7f35059ac4423f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/gold.prefab using Guid(e1f35f4b9ee7e9747b7f35059ac4423f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '80b19ecd302e145e075370a59a0fd80a') in 0.006905 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
 ========================================================================
 Received Import Request.
   Time since last request: 0.000012 seconds.
@@ -311,47 +352,537 @@ Received Import Request.
   artifactKey: Guid(4bcd7948fdd17e74ebf1a06f654e4535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Low_Poly_ResourceRocks/PointyGemsVar1.prefab using Guid(4bcd7948fdd17e74ebf1a06f654e4535) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'd60dfa82f8dcd729c12eb52365f0fceb') in 0.014475 seconds
+ -> (artifact id: 'c17acade05f56c0f5fa08bc21dd91554') in 0.009266 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 10
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Low_Poly_ResourceRocks/SquareGemsVar2.prefab
-  artifactKey: Guid(36b93b46c5c5d60458c18190ea1116c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low_Poly_ResourceRocks/SquareGemsVar2.prefab using Guid(36b93b46c5c5d60458c18190ea1116c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '95a77f32c8142dc0bad9f09a3b12f0a0') in 0.010550 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 82.780524 seconds.
-  path: Assets/Low_Poly_ResourceRocks/CutGemsVar2.prefab
+  Time since last request: 0.000019 seconds.
+  path: Assets/Low_Poly_ResourceRocks/ruby.prefab
   artifactKey: Guid(dd35a2baa2cfd2c4d8efd51a61061e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low_Poly_ResourceRocks/CutGemsVar2.prefab using Guid(dd35a2baa2cfd2c4d8efd51a61061e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+Start importing Assets/Low_Poly_ResourceRocks/ruby.prefab using Guid(dd35a2baa2cfd2c4d8efd51a61061e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'f933988404ddc371797f8783bec12fbb') in 0.007843 seconds
+ -> (artifact id: '9d9ce5fcc7773dc9151ae005dea43641') in 0.010752 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 25.208739 seconds.
+  path: Assets/Low_Poly_ResourceRocks/orange.prefab
+  artifactKey: Guid(bb25fa51c9a58b8428f872f50ae7a208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/orange.prefab using Guid(bb25fa51c9a58b8428f872f50ae7a208) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'cf17c7945574d77fda0307cbd5347a7f') in 0.011078 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 11
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Low_Poly_ResourceRocks/PointyGemsVar2.prefab
+  Time since last request: 87.510159 seconds.
+  path: Assets/Low_Poly_ResourceRocks/orange.prefab
   artifactKey: Guid(bb25fa51c9a58b8428f872f50ae7a208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low_Poly_ResourceRocks/PointyGemsVar2.prefab using Guid(bb25fa51c9a58b8428f872f50ae7a208) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+Start importing Assets/Low_Poly_ResourceRocks/orange.prefab using Guid(bb25fa51c9a58b8428f872f50ae7a208) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'c454ac962d27be7fd303fcbfdc097b3b') in 0.006602 seconds
+ -> (artifact id: 'd25be5de01630d035fe6bb81f1112e9a') in 0.010596 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 1.996563 seconds.
+  path: Assets/Low_Poly_ResourceRocks/Models/CutGemsVar1.fbx
+  artifactKey: Guid(c171d95d7b46de544ab384a78cb358da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/Models/CutGemsVar1.fbx using Guid(c171d95d7b46de544ab384a78cb358da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '2a074fab669662789c02558afb88280f') in 0.021334 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1.050235 seconds.
+  path: Assets/Low_Poly_ResourceRocks/Models/PointyGemsVar1.fbx
+  artifactKey: Guid(c37097fdc32f6cf49b900ef7dd62f59f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/Models/PointyGemsVar1.fbx using Guid(c37097fdc32f6cf49b900ef7dd62f59f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'aa3d77772e4adc1086b08fac1f4af5eb') in 0.013931 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.262754 seconds.
+  path: Assets/Low_Poly_ResourceRocks/Models/PointyGemsVar2.fbx
+  artifactKey: Guid(5dc0801e85d37e846b8f6d589f6fc55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/Models/PointyGemsVar2.fbx using Guid(5dc0801e85d37e846b8f6d589f6fc55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'c0bd35121b3dfd61c8fed6e446ae9665') in 0.012340 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.024584 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Meshes/PP_Barrel_03.fbx
+  artifactKey: Guid(a589f20d43e64cb4f9c5af4d1626b382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Meshes/PP_Barrel_03.fbx using Guid(a589f20d43e64cb4f9c5af4d1626b382) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '4eadef57a8b29effd7893b1e64c65070') in 0.010827 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
   Time since last request: 0.000010 seconds.
-  path: Assets/Low_Poly_ResourceRocks/SquareGemsVar2.prefab
-  artifactKey: Guid(36b93b46c5c5d60458c18190ea1116c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low_Poly_ResourceRocks/SquareGemsVar2.prefab using Guid(36b93b46c5c5d60458c18190ea1116c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+  path: Assets/PurePoly/Mining_Free_Assets/Meshes/PP_Gemstone_05_Green.fbx
+  artifactKey: Guid(efd9a683f7ac81048922b0a9e35134f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Meshes/PP_Gemstone_05_Green.fbx using Guid(efd9a683f7ac81048922b0a9e35134f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '65e8675a638aeaa85a4ecbd51bfaac42') in 0.009518 seconds
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'a11f0469437e3aa5de60b04b9819fb60') in 0.010025 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.261597 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Meshes/PP_Gemstone_07_Copper.fbx
+  artifactKey: Guid(43f971c57f729de4d9f1dc7ea39d9253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Meshes/PP_Gemstone_07_Copper.fbx using Guid(43f971c57f729de4d9f1dc7ea39d9253) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '65c1d849d468c9fd74865ca860c00f4c') in 0.010130 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.009600 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Meshes/PP_Gemstone_07_Gold.fbx
+  artifactKey: Guid(30396a8d74e0ac3468241d49ef28b3a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Meshes/PP_Gemstone_07_Gold.fbx using Guid(30396a8d74e0ac3468241d49ef28b3a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '9f9b463c37410527dba79a278b315623') in 0.006836 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.009839 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Meshes/PP_Gemstone_13_Blue.fbx
+  artifactKey: Guid(816c3e37a32a7f34fbefe884f50f54eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Meshes/PP_Gemstone_13_Blue.fbx using Guid(816c3e37a32a7f34fbefe884f50f54eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '5836a29082d334285262643807afc2bd') in 0.015920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 17.992703 seconds.
+  path: Assets/ItemData/New Inventory Item Data.asset
+  artifactKey: Guid(ad8fd40aac2a3ff4a867aa7938f75660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ItemData/New Inventory Item Data.asset using Guid(ad8fd40aac2a3ff4a867aa7938f75660) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '45d4a7c9d373eb67436f2a860d4818d9') in 0.001780 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 8.660204 seconds.
+  path: Assets/ItemData/emerald.asset
+  artifactKey: Guid(a17cbc996bcba6d439ec1bc0978fa61c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ItemData/emerald.asset using Guid(a17cbc996bcba6d439ec1bc0978fa61c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '31d5ea412d7636aeb43a5c53fc053fb5') in 0.001916 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 4.872883 seconds.
+  path: Assets/ItemData/ruby.asset
+  artifactKey: Guid(ad8fd40aac2a3ff4a867aa7938f75660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ItemData/ruby.asset using Guid(ad8fd40aac2a3ff4a867aa7938f75660) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'fb9d3641beb96375ff98937e5edb4331') in 0.001149 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 21.643787 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Meshes/PP_Horse_Cart_Used_02.fbx
+  artifactKey: Guid(bbe5a9d802a37f740b65d9ab3b3956a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Meshes/PP_Horse_Cart_Used_02.fbx using Guid(bbe5a9d802a37f740b65d9ab3b3956a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8b970f2b9c6f546d38fd2026b2a7d215') in 0.016348 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 9.334481 seconds.
+  path: Assets/ItemData/lopaz.asset
+  artifactKey: Guid(43d5e7f5a7b53854c9ba6cef117e91e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ItemData/lopaz.asset using Guid(43d5e7f5a7b53854c9ba6cef117e91e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '55770abed738a5c9f1ed09e44de5aca8') in 0.001028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.184214 seconds.
+  path: Assets/Scripts/Inventory/item example.prefab
+  artifactKey: Guid(6fe56762bd51e2b4fae73e2f19423519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Inventory/item example.prefab using Guid(6fe56762bd51e2b4fae73e2f19423519) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '12640b831aa4224120f8b718ac4a0bfc') in 0.011361 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 50.533489 seconds.
+  path: Assets/ItemData/gold.asset
+  artifactKey: Guid(e6deed24dbce3bc47af05fce7cb5e90f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ItemData/gold.asset using Guid(e6deed24dbce3bc47af05fce7cb5e90f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '34291e9e402a5c47422c94ab221dc29c') in 0.001024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.375170 seconds.
+  path: Assets/ItemData/gold_4.asset
+  artifactKey: Guid(e6deed24dbce3bc47af05fce7cb5e90f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ItemData/gold_4.asset using Guid(e6deed24dbce3bc47af05fce7cb5e90f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'e61d78c920367f1da5ff9abf62c13882') in 0.000913 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.000134 seconds.
+  path: Assets/ItemData/emerald_1.asset
+  artifactKey: Guid(a17cbc996bcba6d439ec1bc0978fa61c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ItemData/emerald_1.asset using Guid(a17cbc996bcba6d439ec1bc0978fa61c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '521ea9e46f20a6efade22e85bbda7057') in 0.001738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 5.598359 seconds.
+  path: Assets/ItemData/ruby_2.asset
+  artifactKey: Guid(ad8fd40aac2a3ff4a867aa7938f75660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ItemData/ruby_2.asset using Guid(ad8fd40aac2a3ff4a867aa7938f75660) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '76217139a8a50ad01b72865344f9447c') in 0.001725 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 4.845685 seconds.
+  path: Assets/ItemData/lopaz_3.asset
+  artifactKey: Guid(43d5e7f5a7b53854c9ba6cef117e91e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ItemData/lopaz_3.asset using Guid(43d5e7f5a7b53854c9ba6cef117e91e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '5b6af4ef5b4e42d3ad95ebc12bf9fac0') in 0.001651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 21.161764 seconds.
+  path: Assets/Scripts/Inventory/item example.prefab
+  artifactKey: Guid(6fe56762bd51e2b4fae73e2f19423519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Inventory/item example.prefab using Guid(6fe56762bd51e2b4fae73e2f19423519) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'c4b3d49f3e92c78f07e1f6cebd3c7ed4') in 0.017044 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.307619 seconds.
+  path: Assets/Prefabs/pouch.prefab
+  artifactKey: Guid(84fcb74f55fb0cb4692de65e1e12e2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/pouch.prefab using Guid(84fcb74f55fb0cb4692de65e1e12e2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8371a700422e2e3bb3d03e730f2f2b46') in 0.012767 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.718137 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Meshes/PP_Lantern_02_Yellow_Light_Iron.fbx
+  artifactKey: Guid(fc94681f067d1374cbdb94e9f4e714fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Meshes/PP_Lantern_02_Yellow_Light_Iron.fbx using Guid(fc94681f067d1374cbdb94e9f4e714fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '26a887309196d46044007c28ae1722cb') in 0.013068 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 10.434233 seconds.
+  path: Assets/ItemData/orange_4.asset
+  artifactKey: Guid(133ac4277944a1d4fb4d6bad8c5d2123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ItemData/orange_4.asset using Guid(133ac4277944a1d4fb4d6bad8c5d2123) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '3132ed896ddec622062e150c3c1d33ce') in 0.001028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.351328 seconds.
+  path: Assets/ItemData/orange_6.asset
+  artifactKey: Guid(133ac4277944a1d4fb4d6bad8c5d2123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ItemData/orange_6.asset using Guid(133ac4277944a1d4fb4d6bad8c5d2123) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'f9e04bc8f403b3f206960172ba530f54') in 0.001118 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 4.180740 seconds.
+  path: Assets/ItemData/orange_5.asset
+  artifactKey: Guid(133ac4277944a1d4fb4d6bad8c5d2123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ItemData/orange_5.asset using Guid(133ac4277944a1d4fb4d6bad8c5d2123) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '3076259ef26448bf024f8c98b1093a39') in 0.000974 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 45.330552 seconds.
+  path: Assets/Low_Poly_ResourceRocks/emerald.prefab
+  artifactKey: Guid(2fbe16c206e141245b0c4b20de5e2a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/emerald.prefab using Guid(2fbe16c206e141245b0c4b20de5e2a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'bf839925c84dca2aad599ccfe05568fe') in 0.010148 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 7.486610 seconds.
+  path: Assets/Low_Poly_ResourceRocks/gold.prefab
+  artifactKey: Guid(e1f35f4b9ee7e9747b7f35059ac4423f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/gold.prefab using Guid(e1f35f4b9ee7e9747b7f35059ac4423f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'a389689ee1fb35fd62ac6fbf9ddf4502') in 0.006339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 7.547433 seconds.
+  path: Assets/Low_Poly_ResourceRocks/lopaz.prefab
+  artifactKey: Guid(36b93b46c5c5d60458c18190ea1116c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/lopaz.prefab using Guid(36b93b46c5c5d60458c18190ea1116c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'a06e002145941b692fe936110c629877') in 0.009585 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 3.828977 seconds.
+  path: Assets/Low_Poly_ResourceRocks/orange.prefab
+  artifactKey: Guid(bb25fa51c9a58b8428f872f50ae7a208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/orange.prefab using Guid(bb25fa51c9a58b8428f872f50ae7a208) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '839009912ebb72b50c03d245d3b1d62b') in 0.012529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 10.304536 seconds.
+  path: Assets/Low_Poly_ResourceRocks/ruby.prefab
+  artifactKey: Guid(dd35a2baa2cfd2c4d8efd51a61061e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_Poly_ResourceRocks/ruby.prefab using Guid(dd35a2baa2cfd2c4d8efd51a61061e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'bcfb2c18416c85a05571cbab13695c4a') in 0.008309 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 24.183681 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_05_Green.prefab
+  artifactKey: Guid(d9449dcf4f9e2a64e84d9337dcb438eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_05_Green.prefab using Guid(d9449dcf4f9e2a64e84d9337dcb438eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '5b39ebb16254b6040a9c86576f1332a2') in 0.009454 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.557545 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_05_Green.prefab
+  artifactKey: Guid(d9449dcf4f9e2a64e84d9337dcb438eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_05_Green.prefab using Guid(d9449dcf4f9e2a64e84d9337dcb438eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '5ed1b10ca549f49bec32dbfa6732533d') in 0.006236 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 2.319836 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_05_Green.prefab
+  artifactKey: Guid(d9449dcf4f9e2a64e84d9337dcb438eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_05_Green.prefab using Guid(d9449dcf4f9e2a64e84d9337dcb438eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '26b50cab535f4ed168483d552b7ce555') in 0.009626 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1.083564 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_05_Green.prefab
+  artifactKey: Guid(d9449dcf4f9e2a64e84d9337dcb438eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_05_Green.prefab using Guid(d9449dcf4f9e2a64e84d9337dcb438eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'f7ef85c947357147c0b424538b8beac8') in 0.005824 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 15.047941 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_05_Green.prefab
+  artifactKey: Guid(d9449dcf4f9e2a64e84d9337dcb438eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_05_Green.prefab using Guid(d9449dcf4f9e2a64e84d9337dcb438eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'c46e313c6b67a336db35f9c92f56e366') in 0.009715 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.284338 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_05_Green.prefab
+  artifactKey: Guid(d9449dcf4f9e2a64e84d9337dcb438eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_05_Green.prefab using Guid(d9449dcf4f9e2a64e84d9337dcb438eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '68e414e56785d7be1a90eae46a7cad26') in 0.010003 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1.230914 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_05_Green.prefab
+  artifactKey: Guid(d9449dcf4f9e2a64e84d9337dcb438eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_05_Green.prefab using Guid(d9449dcf4f9e2a64e84d9337dcb438eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '12569407aa7fe8dba559fdd230a32f82') in 0.007795 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 4.859051 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_07_Copper.prefab
+  artifactKey: Guid(4bb5291a21fb70a42ba663daf3777d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_07_Copper.prefab using Guid(4bb5291a21fb70a42ba663daf3777d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '4b8cb5e35415bdb1885b280eb0e04546') in 0.013958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.285271 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_07_Copper.prefab
+  artifactKey: Guid(4bb5291a21fb70a42ba663daf3777d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_07_Copper.prefab using Guid(4bb5291a21fb70a42ba663daf3777d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '248be09fe524cc03f31fcc998df5120c') in 0.010330 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1.192586 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_07_Copper.prefab
+  artifactKey: Guid(4bb5291a21fb70a42ba663daf3777d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_07_Copper.prefab using Guid(4bb5291a21fb70a42ba663daf3777d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '3f5335bbabc0ee5afe6915064adbc50a') in 0.007496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1.160133 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_07_Gold.prefab
+  artifactKey: Guid(53168ceb81c92934d9d8edab7fef6d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_07_Gold.prefab using Guid(53168ceb81c92934d9d8edab7fef6d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8759a124f32352a6d5fee877c5172dc9') in 0.010088 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.276701 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_07_Gold.prefab
+  artifactKey: Guid(53168ceb81c92934d9d8edab7fef6d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_07_Gold.prefab using Guid(53168ceb81c92934d9d8edab7fef6d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'bb66d803a83456a98702e1fab497515b') in 0.011555 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1.669708 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_07_Gold.prefab
+  artifactKey: Guid(53168ceb81c92934d9d8edab7fef6d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_07_Gold.prefab using Guid(53168ceb81c92934d9d8edab7fef6d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '77bcb40c578077d5c019db5a798f3517') in 0.010485 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1.079155 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_11_Red.prefab
+  artifactKey: Guid(9de82d5e406d9d544ac387c521e08a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_11_Red.prefab using Guid(9de82d5e406d9d544ac387c521e08a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'aa4d2a8567d95196a55ed1eddc0a8ad2') in 0.009719 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.289859 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_11_Red.prefab
+  artifactKey: Guid(9de82d5e406d9d544ac387c521e08a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_11_Red.prefab using Guid(9de82d5e406d9d544ac387c521e08a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '9186a365a8b54430274cfc38f5d9437e') in 0.009651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1.002450 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_11_Red.prefab
+  artifactKey: Guid(9de82d5e406d9d544ac387c521e08a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_11_Red.prefab using Guid(9de82d5e406d9d544ac387c521e08a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '0c2c8c3415d5b5a6b9a519d11de7be3e') in 0.014685 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 2.173682 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_13_Blue.prefab
+  artifactKey: Guid(305a388b6539d3041a283b76508de030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_13_Blue.prefab using Guid(305a388b6539d3041a283b76508de030) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'ebb57fd6f59354c709daf4d2b66453d6') in 0.010568 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1.007004 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_13_Blue.prefab
+  artifactKey: Guid(305a388b6539d3041a283b76508de030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_13_Blue.prefab using Guid(305a388b6539d3041a283b76508de030) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'eee68b407c9710f8546a005dc8c98e4a') in 0.008825 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 75.718071 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_05_Green.prefab
+  artifactKey: Guid(d9449dcf4f9e2a64e84d9337dcb438eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_05_Green.prefab using Guid(d9449dcf4f9e2a64e84d9337dcb438eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '3c1e0be74166a50ee53c9955da87b3eb') in 0.007464 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_13_Blue.prefab
+  artifactKey: Guid(305a388b6539d3041a283b76508de030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PurePoly/Mining_Free_Assets/Prefabs/PP_Gemstone_13_Blue.prefab using Guid(305a388b6539d3041a283b76508de030) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'b6c84347dd5ba736702c49cb30ddee4e') in 0.005826 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 11
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout

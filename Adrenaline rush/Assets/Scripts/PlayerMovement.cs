@@ -5,6 +5,7 @@ using UnityEngine.Scripting.APIUpdating;
 using UnityEngine.InputSystem;
 using System;
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 
 [RequireComponent(typeof(Player))]
 [RequireComponent(typeof(PlayerHit))]
@@ -21,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float mouseSensitivityFactor = 200f;
     [SerializeField] float jumpingFactor = 1f;
     [SerializeField] bool isGrounded = false;
-    float currentStamina; 
+    float currentStamina;
     bool isRegenerating = false;
     bool isSprinting = false;
 
@@ -58,20 +59,25 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         HandleDirection();
-        HandleMovement();
         Jump();
         Sprint();
+    }
+    void FixedUpdate()
+    {
+        HandleMovement();
     }
     // ws = y (front and back is the move.y) 
     // ad = x (left and right is the move.x)
     void HandleMovement()
     {
+
         Vector2 movementInput = move.ReadValue<Vector2>() * Time.deltaTime * movementFactor;
         float rotationY = transform.eulerAngles.y * Mathf.Deg2Rad;
 
-        transform.Translate(Mathf.Cos(rotationY) * movementInput.x, 0, -Mathf.Sin(rotationY) * movementInput.x, Space.World);
-        transform.Translate(Mathf.Sin(rotationY) * movementInput.y, 0, Mathf.Cos(rotationY) * movementInput.y, Space.World);
+        float x = (Mathf.Cos(rotationY) * movementInput.x + Mathf.Sin(rotationY) * movementInput.y) * movementFactor * Time.deltaTime;
+        float z = (-Mathf.Sin(rotationY) * movementInput.x + Mathf.Cos(rotationY) * movementInput.y) * movementFactor * Time.deltaTime;
 
+        rigidbody.AddForce(new Vector3(x, 0, z) * movementFactor, ForceMode.Force);
 
     }
     void HandleDirection()
@@ -90,9 +96,9 @@ public class PlayerMovement : MonoBehaviour
         if (jumpInput > 0 && isGrounded)
         {
             rigidbody.AddForce(Vector3.up * jumpingFactor, ForceMode.Impulse);
-            
+
         }
-        if(rigidbody.velocity.y < float.Epsilon && !isGrounded) 
+        if (rigidbody.velocity.y < float.Epsilon && !isGrounded)
             rigidbody.AddForce(Physics.gravity * 2.5f, ForceMode.Acceleration);
 
 
@@ -114,16 +120,16 @@ public class PlayerMovement : MonoBehaviour
             }
             movementFactor = defaultMovementFactor;
         }
-        
+
     }
     private IEnumerator DecreaseStamina()
     {
         isRegenerating = false;
         isSprinting = true;
-        
+
         while (currentStamina > 0 && isSprinting)
         {
-            currentStamina = Mathf.Clamp(currentStamina -2, 0, maxStamina);
+            currentStamina = Mathf.Clamp(currentStamina - 2, 0, maxStamina);
             yield return new WaitForSeconds(0.2f);
         }
     }
