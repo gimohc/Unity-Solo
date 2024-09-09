@@ -11,8 +11,6 @@ public class PlayerHit : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] InputAction swing;
     bool isSwinging = false;
-    public static int defaultDamage = 10;
-    public static float defaultRange = 40f;
     Inventory inventory;
 
     void Start()
@@ -32,13 +30,13 @@ public class PlayerHit : MonoBehaviour
     {
         isSwinging = true;
         RaycastHit rayHit;
-        int damage = defaultDamage;
-        float range = defaultRange;
+        float range = 0;
+
         InventoryItem itemInHand = inventory.GetItemInHand();
         if (itemInHand != null)
         {
             range = itemInHand.data.range;
-            damage = itemInHand.data.damage;
+            //int damage = itemInHand.data.damage;
         }
         if (Physics.Raycast(transform.position, Vector3.forward, out rayHit, range))
         {
@@ -48,7 +46,7 @@ public class PlayerHit : MonoBehaviour
                 ObjectStats stats = objectHit.GetComponent<ObjectStats>();
                 if (stats != null)
                 {
-                    stats.DealDamage(damage);
+                    //stats.DealDamage(damage);
                 }
 
             }

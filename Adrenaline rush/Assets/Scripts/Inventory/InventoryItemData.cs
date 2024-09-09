@@ -8,11 +8,14 @@ using UnityEngine;
 [Serializable]
 public class InventoryItemData : ScriptableObject
 {
+    const int DEFAULTDAMAGE = 10;
     public string id;
     public string displayName;
     public Sprite icon;
     public GameObject prefab;
-    public int damage = PlayerHit.defaultDamage;
-    public float range = PlayerHit.defaultRange;
+    public int entityDamage = DEFAULTDAMAGE;
+    public int treeDamage = DEFAULTDAMAGE;
+    public int mineDamage = DEFAULTDAMAGE;
+    public float range = 40;
 
 }
